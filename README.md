@@ -19,7 +19,8 @@ This analysis serves as a foundational step to ensure data quality and provide a
 ## ⚙️ Technical Details
 
 * **Power BI File:** `Data Cleaning - Married Average Children Count.pbix`
-* **Data Source:** CSV File located at `/Power-BI/MArketing_Customer_data_uncleaned`
+* **Data Source:** [CSV File located] at (/Power-BI-Data-Cleaning-Married-Average-Children-Count
+/marketing_customer_data_uncleaned.csv)
 * **Tools Used:** **Power BI Desktop**, **Power Query (M Language)**, and **DAX**.
 
 ---
