@@ -18,9 +18,8 @@ This analysis serves as a foundational step to ensure data quality and provide a
 
 ## ⚙️ Technical Details
 
-* **Power BI File:** `Data Cleaning - Married Average Children Count.pbix`
-* **Data Source:** [CSV File located] at (/Power-BI-Data-Cleaning-Married-Average-Children-Count
-/marketing_customer_data_uncleaned.csv)
+* **Power BI File:** Data Cleaning - Married Average Children Count.pbix
+* **Data Source:** [marketing\_customer\_data\_uncleaned.csv](marketing\_customer\_data\_uncleaned.csv)
 * **Tools Used:** **Power BI Desktop**, **Power Query (M Language)**, and **DAX**.
 
 ---
@@ -31,9 +30,9 @@ The following sequence of critical data cleaning and transformation steps was ex
 
 | Step | Action Performed | Purpose |
 | :--- | :--- | :--- |
-| **Initial Cleanup** | Replace `"NA"` with `""` across all columns. Transpose table to easily remove entirely blank rows. | Handles inconsistent missing value representation and removes unneeded rows. |
+| **Initial Cleanup** | Replace "NA" with "" across all columns. Transpose table to easily remove entirely blank rows. | Handles inconsistent missing value representation and removes unneeded rows. |
 | **Header & Duplicates** | Promote Headers. Remove duplicate rows based on **'Column1'** (assumed to be the unique identifier). | Ensures correct column naming and data uniqueness. |
-| **Data Standardisation** | Replace the suffix `" kid(s)"` with `""` in the **Kidhome** column. | Prepares the column for numerical type conversion. |
+| **Data Standardisation** | Replace the suffix " kid(s)" with "" in the **Kidhome** column. | Prepares the column for numerical type conversion. |
 | **Type Conversion** | Transform column types (e.g., **ID** to Integer, **Income** to Currency, **Dt\_Customer** to Date). | Enforces data integrity and enables proper mathematical operations. |
 | **Final Polish** | Sort the resulting table by **ID** in ascending order. | Organizes the final clean data table. |
 
@@ -58,7 +57,7 @@ While a formal DAX measure could be created, the **Average Children Count for Ma
 ## 🛠️ How to Use
 
 1.  **Download:** Clone this repository to your local machine.
-2.  **Open:** Open the `Data Cleaning - Married Average Children Count.pbix` file using **Power BI Desktop**.
+2.  **Open:** Open the Data Cleaning - Married Average Children Count.pbix file using **Power BI Desktop**.
 3.  **Explore:** Navigate through the report pages to view the cleaned data and the final average children count visualization.
 4.  **Refresh (if necessary):** If the data source is not embedded or the local path has changed, you may need to update the source path:
     * Go to **File** > **Options and settings** > **Data source settings**.
